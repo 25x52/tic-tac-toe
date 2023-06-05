@@ -66,41 +66,61 @@
               </li>
             </ol>
             <div id="game-control">
-              <button
-                id="play-button"
-                class="disabled"
-                >
-                Start game
-            </button>
+              <button id="play-button" class="disabled">Start game</button>
+            </div>
           </section>
 
           <div id="active-game" class="">
             <section id="game-messaging" class="hidden">
               <article id="game-over" class="hidden">
-                <h3 id="winner-message"><span class="color-bar"></span>You won, <span id="winner-name"> Player Name </span>! 🎉</h3>
+                <h3 id="winner-message">
+                  <span class="color-bar"></span>You won,
+                  <span id="winner-name"> Player Name </span>! 🎉
+                </h3>
                 <h3 id="draw-message"></h3>
               </article>
 
               <p id="turn-message">
                 <span class="color-bar"></span>
-                <span id="active-player-name"> Player Name </span> 
+                <span id="active-player-name"> Player Name </span>
                 It’s your turn!
               </p>
             </section>
 
             <section id="game-board" class="disabled">
+              <article id="game-intro">
+                <p>
+                  Tic Tac Toe is a classic game between two players. Each player
+                  takes turns to win by being the first to get three of their
+                  game pieces in a row, column, or diagonally.
+                </p>
+
+                <details>
+                  <summary>Technical notes</summary>
+                  This is a client-based application written in pure JavaScript,
+                  HMTL, and CSS with no backend. Check out the
+                  <a href="https://github.com/25x52/tic-tac-toe"
+                    >GitHub repository</a
+                  >
+                </details>
+                <details>
+                  <summary>Colophon</summary>
+                  This is part of <a href="https://25x52.com" target="_blank" rel="noopener noreferrer">25x52</a> , an effort to create (and ship) 25 projects in 52 weeks. The game is adapted from Academind’s <a href="https://100daysofwebdev.com" target="_blank" rel="noopener noreferrer">100 Days of Web Development</a> course. 
+                </details>
+              </article>
+
               <ol>
-                <li data-col='1' data-row='1'></li>
-                <li data-col='2' data-row='1'></li>
-                <li data-col='3' data-row='1'></li>
+                <li data-col="1" data-row="1"></li>
+                <li data-col="2" data-row="1"></li>
+                <li data-col="3" data-row="1"></li>
 
-                <li data-col='1' data-row='2'></li>
-                <li data-col='2' data-row='2'></li>
-                <li data-col='3' data-row='2'></li>
+                <li data-col="1" data-row="2"></li>
+                <li data-col="2" data-row="2"></li>
+                <li data-col="3" data-row="2"></li>
 
-                <li data-col='1' data-row='3'></li>
-                <li data-col='2' data-row='3'></li>
-                <li data-col='3' data-row='3'></li>
+                <li data-col="1" data-row="3"></li>
+                <li data-col="2" data-row="3"></li>
+                <li data-col="3" data-row="3"></li>
               </ol>
             </section>
           </div>

@@ -5,37 +5,14 @@
 }
 
 html {
-  --color-blue-lighter: #ebf5fa;
-
-  --color-indigo-lighter: #f4f5fa;
-
   --color-ink: #423131;
   --color-ink-light: #5e4246;
   --color-ink-lighter: #8e7b7e;
   --color-ink-lightest: #bfb3b5;
 
-  /* --color-flesh: #f8e1d9;
-  --color-flesh-10: rgba(243, 205, 192, 0.1);
-  --color-flesh-20: rgba(243, 205, 192, 0.2);
-  --color-flesh-25: rgba(243, 205, 192, 0.25);
-
-  --color-flesh-30: rgba(243, 205, 192, 0.3);
-  --color-flesh-40: rgba(243, 205, 192, 0.4);
-  --color-flesh-50: rgba(243, 205, 192, 0.5);
-  --color-flesh-60: rgba(243, 205, 192, 0.6); */
-
 
   --color-flesh: rgba(245, 226, 220, 1);
-  /* --color-flesh-10: rgba(245, 226, 220, .1);
-  --color-flesh-20: rgba(245, 226, 220, .2);
-  --color-flesh-25: rgba(245, 226, 220, .25);
-  --color-flesh-30: rgba(245, 226, 220, .3);
-  --color-flesh-40: rgba(245, 226, 220, .4);
-  --color-flesh-50: rgba(245, 226, 220, .5);
-  --color-flesh-60: rgba(245, 226, 220, .6); */
   --color-flesh-lightest: #FBF0EC;
-
-
 
   --color-sky-light: #f4f6f8;
 
@@ -44,13 +21,6 @@ html {
   --color-yellow-lighter: #fef9e9;
   --color-yellow-lightest: #fefcf5;
 
-  /* --color-orange: rgba(255, 134, 0, 1);
-  --color-orange-80: rgba(255, 134, 0, 0.8);
-  --color-orange-60: rgba(255, 134, 0, 0.6);
-  --color-orange-50: rgba(255, 134, 0, 0.5);
-  --color-orange-40: rgba(255, 134, 0, 0.4);
-  --color-orange-20: rgba(255, 134, 0, 0.2); */
-
   --color-orange: rgba(255, 157, 0, 1);
   --color-orange-80: rgba(255, 157, 0, .8);
   --color-orange-60: rgba(255, 157, 0, .6);
@@ -58,16 +28,10 @@ html {
   --color-orange-40: rgba(255, 157, 0, .4);
   --color-orange-20: rgba(255, 157, 0, .2);
 
-  /* --color-red-500v: rgba(252, 79, 78, 1);
-  --color-red-500v-60: rgba(252, 79, 78, 0.6);
-  --color-red-500v-40: rgba(252, 79, 78, 0.4);
-  --color-red-500v-05: rgba(252, 79, 78, 0.05); */
-
   --color-red-500v: rgba(251, 73, 45, 1);
   --color-red-500v-60: rgba(251, 73, 45, .6);
   --color-red-500v-40: rgba(251, 73, 45, .4);
   --color-red-500v-05: rgba(251, 73, 45, .05);
-
 
   --color-white-20: rgba(255, 255, 255, 0.2);
   --color-white-40: rgba(255, 255, 255, 0.4);
@@ -92,7 +56,7 @@ html {
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans",
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-  font-feature-settings: "tnum" on, "lnum" on, "ss06" on;
+  font-feature-settings: "tnum" on, "lnum" on;
 }
 
 ul,

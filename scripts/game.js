@@ -3,6 +3,7 @@ function startNewGame() {
 
   gameAreaElement.classList.remove('disabled');
   document.getElementById('game-messaging').classList.remove('hidden');
+  document.getElementById('game-intro').classList.add('hidden');
   switchGamePlayButton();
   playerTurnMessage();
 
