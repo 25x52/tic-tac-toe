@@ -1,112 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Darumadrop+One&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./styles/shared.css" />
-    <link rel="stylesheet" href="./styles/forms.css" />
-    <link rel="stylesheet" href="./styles/overlay.css" />
-    <link rel="stylesheet" href="./styles/tictactoe.css" />
-    <script src="./scripts/config.js"></script>
-    <script src="./scripts/game.js"></script>
-    <script src="./scripts/app.js" defer></script>
 
-    <title>Tic Tac Toe</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Darumadrop+One&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./styles/shared.css" />
+  <link rel="stylesheet" href="./styles/forms.css" />
+  <link rel="stylesheet" href="./styles/overlay.css" />
+  <link rel="stylesheet" href="./styles/tictactoe.css" />
+  <script src="./scripts/config.js"></script>
+  <script src="./scripts/game.js"></script>
+  <script src="./scripts/app.js" defer></script>
 
-  <body id="tic-tac-toe">
-    <div class="container-fluid">
-      <aside id="overlay" class="hidden">
-        <div id="modal-window" class="">
-          <form id="form-player-name" action="/" method="GET">
-            <label for="username">Player 01</label>
-            <input
-              type="text"
-              name="username"
-              id="username-input-field"
-              class=""
-              placeholder="Your name"
-              maxlength="10"
-              autocomplete="off"
-              required
-            />
-            <p id="config-errors" class="caption"></p>
-            <section class="cta align-right">
-              <button type="button" class="outline">Cancel</button>
-              <button type="submit" class="solid">Add player</button>
-            </section>
-          </form>
-        </div>
-      </aside>
-      <div class="container">
-        <header>
-          <h1>tic tac toe</h1>
-        </header>
-        <main>
-          <section id="player-controls">
-            <ol id="players">
-              <li id="player-1">
-                <article>
-                  <h2>Player 1</h2>
-                  <h3 class="blank-state">Add name</h3>
-                </article>
-              </li>
-              <li id="player-2">
-                <article>
-                  <h2>Player 2</h2>
-                  <h3 class="blank-state">Add name</h3>
-                </article>
-              </li>
-            </ol>
-            <div id="game-control">
-              <button
-                id="play-button"
-                class="disabled"
-                >
-                Start game
+  <title>Tic Tac Toe</title>
+</head>
+
+<body id="tic-tac-toe">
+  <div class="container-fluid">
+    <aside id="overlay" class="hidden">
+      <div id="modal-window" class="">
+        <form id="form-player-name" action="/" method="GET">
+          <label for="username">Player 01</label>
+          <input type="text" name="username" id="username-input-field" class="" placeholder="Your name" maxlength="10"
+            autocomplete="off" required />
+          <p id="config-errors" class="caption"></p>
+          <section class="cta align-right">
+            <button type="button" class="outline">Cancel</button>
+            <button type="submit" class="solid">Add player</button>
+          </section>
+        </form>
+      </div>
+    </aside>
+    <div class="container">
+      <header>
+        <h1>tic tac toe</h1>
+      </header>
+      <main>
+        <section id="player-controls">
+          <ol id="players">
+            <li id="player-1">
+              <article>
+                <h2>Player 1</h2>
+                <h3 class="blank-state">Add name</h3>
+              </article>
+            </li>
+            <li id="player-2">
+              <article>
+                <h2>Player 2</h2>
+                <h3 class="blank-state">Add name</h3>
+              </article>
+            </li>
+          </ol>
+          <div id="game-control">
+            <button id="play-button" class="disabled">
+              Start game
             </button>
-            </div>
+          </div>
+        </section>
+
+        <div id="active-game" class="">
+          <section id="game-messaging" class="hidden">
+            <article id="game-over" class="hidden">
+              <h3 id="winner-message"><span class="color-bar"></span>You won, <span id="winner-name"> Player Name
+                </span>! 🎉</h3>
+              <h3 id="draw-message"></h3>
+            </article>
+
+            <p id="turn-message">
+              <span class="color-bar"></span>
+              <span id="active-player-name"> Player Name </span>
+              It’s your turn!
+            </p>
           </section>
 
-          <div id="active-game" class="">
-            <section id="game-messaging" class="hidden">
-              <article id="game-over" class="hidden">
-                <h3 id="winner-message"><span class="color-bar"></span>You won, <span id="winner-name"> Player Name </span>! 🎉</h3>
-                <h3 id="draw-message"></h3>
-              </article>
-
-              <p id="turn-message">
-                <span class="color-bar"></span>
-                <span id="active-player-name"> Player Name </span> 
-                It’s your turn!
+          <section id="game-board" class="disabled">
+            <article id="game-intro">
+              <p>
+                Tic Tac Toe is a classic game between two players. Each player
+                takes turns to win by being the first to place three of their
+                game pieces in a row, column, or diagonally.
               </p>
-            </section>
 
-            <section id="game-board" class="disabled">
-              <ol>
-                <li data-col='1' data-row='1'></li>
-                <li data-col='2' data-row='1'></li>
-                <li data-col='3' data-row='1'></li>
+              <details>
+                <summary>Technical notes</summary>
+                This is a client-based application written in pure JavaScript,
+                HMTL, and CSS with no backend. Check out the
+                <a href="https://github.com/25x52/tic-tac-toe"
+                  >GitHub repository</a
+                >
+              </details>
+              <details>
+                <summary>Colophon</summary>
+                This project is part of <a href="https://25x52.com" target="_blank" rel="noopener noreferrer">25x52</a>, an initiative to launch 25 projects in 52 weeks. The game is adapted from Academind’s <a href="https://100daysofwebdev.com" target="_blank" rel="noopener noreferrer">100 Days of Web Development</a>. 
+              </details>
+            </article>
+            <ol>
+              <li data-col='1' data-row='1'></li>
+              <li data-col='2' data-row='1'></li>
+              <li data-col='3' data-row='1'></li>
 
-                <li data-col='1' data-row='2'></li>
-                <li data-col='2' data-row='2'></li>
-                <li data-col='3' data-row='2'></li>
+              <li data-col='1' data-row='2'></li>
+              <li data-col='2' data-row='2'></li>
+              <li data-col='3' data-row='2'></li>
 
-                <li data-col='1' data-row='3'></li>
-                <li data-col='2' data-row='3'></li>
-                <li data-col='3' data-row='3'></li>
-              </ol>
-            </section>
-          </div>
-        </main>
-      </div>
+              <li data-col='1' data-row='3'></li>
+              <li data-col='2' data-row='3'></li>
+              <li data-col='3' data-row='3'></li>
+            </ol>
+          </section>
+        </div>
+      </main>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>

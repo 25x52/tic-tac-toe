@@ -26,14 +26,13 @@ html {
 
 
   --color-flesh: rgba(245, 226, 220, 1);
-  /* --color-flesh-10: rgba(245, 226, 220, .1);
+  --color-flesh-10: rgba(245, 226, 220, .1);
   --color-flesh-20: rgba(245, 226, 220, .2);
   --color-flesh-25: rgba(245, 226, 220, .25);
   --color-flesh-30: rgba(245, 226, 220, .3);
   --color-flesh-40: rgba(245, 226, 220, .4);
   --color-flesh-50: rgba(245, 226, 220, .5);
-  --color-flesh-60: rgba(245, 226, 220, .6); */
-  --color-flesh-lightest: #FBF0EC;
+  --color-flesh-60: rgba(245, 226, 220, .6);
 
 
 

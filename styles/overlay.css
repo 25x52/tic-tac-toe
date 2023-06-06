@@ -8,7 +8,7 @@
 }
 
 #modal-window {
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   border-radius: 3px;
   margin: 100px auto 0 auto;
   padding: 64px 40px 24px 240px;
@@ -19,11 +19,11 @@
 }
 
 #modal-window.player-1 {
-  background: var(--color-yellow-light) url(/assets/x.svg) -32px 8px no-repeat;
+  background: var(--color-flesh) url(/assets/x.svg) -32px 8px no-repeat;
 }
 
 #modal-window.player-2 {
-  background: var(--color-yellow-light) url(/assets/o.svg) -24px 8px no-repeat;
+  background: var(--color-flesh) url(/assets/o.svg) -24px 8px no-repeat;
   /* background: var(--color-background-warm) url(/assets/o.svg) -24px 8px no-repeat; */
 }
 
@@ -35,8 +35,8 @@
   color: var(--color-ink);
   font-size: 28px;
   font-weight: 600;
-  /* margin-top: 4px; */
-  padding: 12px 0 12px;
+  margin-top: 8px;
+  padding: 16px 4px 12px;
   line-height: 24px;
 }
 
