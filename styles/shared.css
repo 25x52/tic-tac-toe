@@ -91,7 +91,7 @@ html {
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans",
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-  font-feature-settings: "tnum" on, "lnum" on, "ss06" off;
+  font-feature-settings: "tnum" on, "lnum" on, 'zero' on, "ss06" off;
 }
 
 ul,
