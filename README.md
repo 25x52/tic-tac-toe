@@ -9,7 +9,7 @@ This is a client-based application written in pure JavaScript, HMTL, and CSS wit
 
 <details>
 <summary>Colophon</summary>
-This project is part of 25x52, an initiative to launch 25 projects in 52 weeks. The game is adapted from Academind’s 100 Days of Web Development. 
+  This project is part of <a href="https://25x52.com">25x52</a>, an initiative to launch 25 projects in 52 weeks. The game is adapted from Academind’s <a href="https://100daysofwebdev.com">100 Days of Web Development</a>. 
 </details>
 
 
