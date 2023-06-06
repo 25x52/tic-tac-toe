@@ -13,5 +13,5 @@ This is a client-based application written in pure JavaScript, HMTL, and CSS wit
 </details>
 
 
-![screencapture-25x52-tic-tac-toe-2023-06-05-22_35_46](https://github.com/25x52/tic-tac-toe/assets/471514/0bb39cc2-0679-4813-b47b-dd618d669d37)
-![screencapture-25x52-tic-tac-toe-2023-06-05-22_00_50](https://github.com/25x52/tic-tac-toe/assets/471514/4fdd6d26-bcaf-47a2-8012-c3879e26b57a)
+
+<img width="2176" alt="mbp" src="https://github.com/25x52/tic-tac-toe/assets/471514/12dac8a1-ea43-42a9-a35b-fadb324cbe8a">
